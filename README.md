@@ -17,7 +17,12 @@ conda install scipy=1.5.2
 conda install -c jmcmurray os
 conda install -c jmcmurray json
 conda install -c jmcmurray matplotlib
-``` 
+```
+
+If you do not have a fortran compiler, you can install it by running the following:
+```
+conda install -c conda-forge gfortran
+```
 Download the python notebooks and utils.py then compile the fortran script by running the following in the terminal [Should be in the same directory where you stored the notebooks]:
 ```
 f2py -c fast_sparce_multiplications_2D.f90 -m fast_sparce_multiplications_2D
