@@ -25,7 +25,7 @@ conda install -c conda-forge gfortran
 ```
 Download the python notebooks and utils.py then compile the fortran script by running the following in the terminal [Should be in the same directory where you stored the notebooks]:
 ```
-f2py -c fast_sparce_multiplications_2D.f90 -m fast_sparce_multiplications_2D
+f2py -c fast_sparce_multiplications_2D_find_efficient.f90 -m fast_sparce_multiplications_2D
 ```
 After doing the installation/compilation above, you just need to activate the environment every time you use it again: `conda activate fmc` .
 
